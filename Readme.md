@@ -9,4 +9,13 @@ rewrite
 
 [Module ngx_http_rewrite_module](https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return)
 ## 目录
-[Demo1](demo1/Readme.md)
+- [Demo1](demo1/Readme.md)
+  - 最简配置
+  - 基础配置
+  - return 指令
+  - 访问日志
+
+- [Demo2](demo2/Reame.md)
+  - location 匹配规则
+  - return 指令
+  - rewrite 指令
