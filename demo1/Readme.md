@@ -43,10 +43,38 @@ total 3.6M
 -rw-r--r-- 1 root root 848K Jan 25 15:13 ngx_stream_js_module.so
 ```
 ## 尝试精简配置
-可以看到，默认配置有 `include       /etc/nginx/mime.types`，
-而mime.types 有 types 和 default_type 指令。
-查阅文档，可以省略。
+```
+user nginx;
+events {}
+http {
+  server {
+    listen 80;
+    return 200 "$time_iso8601\n";
+  }
+}
+```
+```
+user nginx;
+work_processes auto;
+error_log /var/log/nginx/error.log info;
+pid /var/run/nginx.pid;
+events {}
+http {
+    server {
+        listent 80;
+        root /usr/share/nginx/html;
 
+        location / {
+            index index.hmtl index.htm;
+        }
+
+        error_page 500 502 503 504 /50x.html
+        location = /50x.html {
+            root /usr/share/nginx/html;
+        }
+    }
+}
+```
 ## user
 ```
 Syntax: 	user user [group];
@@ -100,7 +128,7 @@ Context: 	main
 ## events
 无默认值。
 
-不能生路，如果缺少，启动时报错
+不能省略，如果缺少，启动时报错
 ```
 nginx: [emerg] no "events" section in configuration
 ```

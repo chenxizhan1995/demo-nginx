@@ -15,7 +15,5 @@ rewrite
   - return 指令
   - 访问日志
 
-- [Demo2](demo2/Reame.md)
-  - location 匹配规则
-  - return 指令
+- [Demo2](demo2/Readme.md)
   - rewrite 指令
