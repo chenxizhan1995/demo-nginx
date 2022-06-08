@@ -17,3 +17,9 @@ rewrite
 
 - [Demo2](demo2/Readme.md)
   - rewrite 指令
+
+- [Demo3](demo3/Readme.md)
+  - proxy_pass 指令，HTTP 代理
+
+- [Demo4](demo4/Readme.md)
+  - limit_except 指令，限制 HTTP 方法
