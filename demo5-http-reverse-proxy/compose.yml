@@ -7,4 +7,3 @@ services:
       # - "./error.log:/var/log/nginx/error.log"
     ports:
       - "0.0.0.0:80:80"
-      - "0.0.0.0:81:81"
