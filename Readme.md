@@ -26,8 +26,3 @@ rewrite
 
 - [demo5-http-reverse-proxy](demo5/Readme.md)
   - proxy_pass 指令，HTTP 代理
-
-- nginx 重定向（return 30x xxx, rewrite xxx redirect）
-
-- WebSocket 代理 [WebSocket proxying](https://nginx.org/en/docs/http/websocket.html)
-

@@ -29,3 +29,7 @@ test1.demo1.p :
 	$(curl) "http://localhost/test1/demo1.10/hello?name=jack"
 	$(curl) "http://localhost/test1/demo1.01/hello?name=jack"
 	$(curl) "http://localhost/test1/demo1.00/hello?name=jack"
+
+test2:
+	$(curl) "http://localhost/test2/demo1/hello"
+	$(curl) "http://localhost/test2/demo2/hello"
