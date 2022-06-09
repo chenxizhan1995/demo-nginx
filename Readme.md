@@ -19,7 +19,14 @@ rewrite
   - rewrite 指令
 
 - [Demo3](demo3/Readme.md)
-  - proxy_pass 指令，HTTP 代理
+  - nginx 变量
 
 - [Demo4](demo4/Readme.md)
   - limit_except 指令，限制 HTTP 方法
+- [Demo5](demo5/Readme.md)
+  - proxy_pass 指令，HTTP 代理
+
+- nginx 重定向（return 30x xxx, rewrite xxx redirect）
+
+- WebSocket 代理 [WebSocket proxying](https://nginx.org/en/docs/http/websocket.html)
+
