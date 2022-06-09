@@ -122,3 +122,14 @@ curl -w "\n" "http://localhost/test2/demo2/hello"
             Connection: close
             X-Forwarded-For:172.18.107.1
 ```
+## 3. 超时设置
+```bash
+$ curl -w "\n" "http://localhost/test3/demo1/hello"
+<html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx/1.21.6</center>
+</body>
+</html>
+```

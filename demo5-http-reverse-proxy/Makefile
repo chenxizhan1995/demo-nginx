@@ -33,3 +33,6 @@ test1.demo1.p :
 test2:
 	$(curl) "http://localhost/test2/demo1/hello"
 	$(curl) "http://localhost/test2/demo2/hello"
+
+test3:
+	$(curl) "http://localhost/test3/demo1/hello"
